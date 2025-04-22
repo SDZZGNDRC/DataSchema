@@ -1,0 +1,22 @@
+message Books {
+  required group arg {
+    required binary channel (UTF8);
+    optional binary instId (UTF8);
+    optional binary instType (UTF8);
+    optional binary InstFamily (UTF8);
+    optional binary uly (UTF8);
+  }
+  required group data {
+    repeated group asks {
+      repeated binary ask_level (UTF8);
+    }
+    repeated group bids {
+      repeated binary bid_level (UTF8);
+    }
+    required binary ts (UTF8);
+    required int64 checksum;
+    required int64 prevSeqId;
+    required int64 seqId;
+  }
+  required binary action (UTF8);
+}
