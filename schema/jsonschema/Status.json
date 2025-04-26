@@ -39,6 +39,8 @@
                     "data": {
                         "type": "array",
                         "description": "Array of status events",
+                        "minItems": 1,
+                        "maxItems": 1,
                         "items": {
                             "type": "object",
                             "additionalProperties": false,

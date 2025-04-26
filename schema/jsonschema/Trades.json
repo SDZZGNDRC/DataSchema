@@ -38,6 +38,9 @@
                     },
                     "data": {
                         "type": "array",
+                        "description": "the length of this array could only be 1",
+                        "minItems": 1,
+                        "maxItems": 1,
                         "items": {
                             "type": "object",
                             "required": ["instId", "tradeId", "px", "sz", "side", "ts"],
